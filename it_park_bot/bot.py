@@ -3,7 +3,7 @@ bot = telebot.TeleBot('7002682336:AAFKLNJj93CmNFepx5145-x7x6FWho93wQ0'); #тут
 @bot.message_handler(content_types=['text']) #слушаем бота
 def get_text(message):
     if message.text == "Привет": #проверям сообщение от пользователя
-        bot.send_message(message.from_user.id, "Здравствуй, мой дорогой друг!") #отвечаем пользователю
+        bot.send_message(message.from_user.id, "Привет Друг!") #отвечаем пользователю
     elif message.text == "/help":
         bot.send_message(message.from_user.id, "напиши: Привет")
     else:
