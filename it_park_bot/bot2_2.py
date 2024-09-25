@@ -49,6 +49,7 @@ def get_age(message):
             bot.send_message(message.from_user.id, f'тебя зовут {name}, родился в {2024 - age}')
             bot.register_next_step_handler(message, get_start)
         except Exception:
-            bot.send_message(message.from_user.id, 'введите число')             
+            bot.send_message(message.from_user.id, 'введите число')   
+            bot.register_next_step_handler(message, get_age)        
 
 bot.polling(none_stop=True, interval=0)
