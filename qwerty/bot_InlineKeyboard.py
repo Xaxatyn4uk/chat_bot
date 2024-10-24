@@ -1,9 +1,8 @@
 from telebot import types, TeleBot
-from dotenv import load_dotenv 
 from key_button import keyboard2
-import os
-load_dotenv()
-bot = TeleBot(os.getenv('TOKEN'))
+
+bot = TeleBot('7002682336:AAFKLNJj93CmNFepx5145-x7x6FWho93wQ0')
+
 
 @bot.callback_query_handler(func=lambda call: True)
 def call_handler(call):
