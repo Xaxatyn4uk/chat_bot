@@ -1,8 +1,6 @@
 from telebot import types, TeleBot
-from dotenv import load_dotenv #сначала надо импортировать pip install python-dotenv
-import os
-load_dotenv()
-bot = TeleBot(os.getenv('TOKEN'))
+
+bot = TeleBot('7002682336:AAFKLNJj93CmNFepx5145-x7x6FWho93wQ0')
 
 name = ''
 age = 0
