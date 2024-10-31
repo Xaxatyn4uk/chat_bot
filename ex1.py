@@ -1,8 +1,8 @@
 from telebot import types
 import telebot
 
-token = '7002682336:AAFKLNJj93CmNFepx5145-x7x6FWho93wQ0'
-my_chat_id = '770139693'
+token = ''
+my_chat_id = ''
 
 bot = telebot.TeleBot(token)
 
